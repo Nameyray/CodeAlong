@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Locale;
 
 public class MessageCipher {
     Character[] alphabet={'A', 'B', 'C','D', 'E', 'F','G', 'H', 'I','J', 'K', 'L','M', 'N', 'O','P', 'Q', 'R','S', 'T', 'U','V', 'W', 'X','Y', 'Z'};
@@ -13,7 +12,7 @@ public class MessageCipher {
         return alphabet[position];
 
     }
-    public String Word(String word) {
+    public String cipherWord(String word) {
         char[] wordCharacterArray = word.toCharArray();
         String cipherWord = "";
 

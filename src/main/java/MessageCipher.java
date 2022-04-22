@@ -13,7 +13,7 @@ public class MessageCipher {
 
     }
     public String cipherWord(String word) {
-        char[] wordCharacterArray = word.toCharArray();
+        char[] wordCharacterArray = word.toUpperCase().toCharArray();
         String cipherWord = "";
 
         for (int i=0; i<wordCharacterArray.length;i++){

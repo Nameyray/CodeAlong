@@ -17,10 +17,16 @@ public class MessageCipherTest {
     }
 
     @Test
-    public void cipherLetter_returnsCypherWord_TCEJGN(){
+    public void cipherWord_returnsCypherWord_TCEJGN(){
         MessageCipher messageCipher = new MessageCipher();
         String expected = "TCEJGN";
         assertEquals(expected, messageCipher.cipherWord("RACHEL"));
     }
 
+    @Test
+    public void cipherWord_lowerCase_returnsCypherWord_TCEJGN(){
+        MessageCipher messageCipher = new MessageCipher();
+        String expected = "TCEJGN";
+        assertEquals(expected, messageCipher.cipherWord("rachel"));
+    }
 }

@@ -5,15 +5,22 @@ public class MessageCipherTest {
     @Test
     public void cipherLetter_returnsCharPlusTwoPosition_C(){
         MessageCipher messageCipher = new MessageCipher();
-        Character expected = 'C';
-        assertEquals(expected, messageCipher.cipherLetter('A'));
+        Character expected = 'D';
+        assertEquals(expected, messageCipher.cipherLetter('B'));
     }
 
     @Test
-    public void cipherLetter_returnsCypherWord_C(){
+    public void cipherLetter_returnsCypherWord_DQA(){
         MessageCipher messageCipher = new MessageCipher();
-        Character expected = 'C';
-        assertEquals(expected, messageCipher.cipherLetter('A'));
+        String expected = "DQA";
+        assertEquals(expected, messageCipher.cipherWord("BOY"));
+    }
+
+    @Test
+    public void cipherLetter_returnsCypherWord_TCEJGN(){
+        MessageCipher messageCipher = new MessageCipher();
+        String expected = "TCEJGN";
+        assertEquals(expected, messageCipher.cipherWord("RACHEL"));
     }
 
 }
